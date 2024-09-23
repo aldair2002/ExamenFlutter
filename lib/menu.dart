@@ -1,17 +1,13 @@
-import 'package:examen/main.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'menu.dart';
 import 'create_ticket.dart'; 
 import 'view_ticket.dart'; 
 
-void main() {
-  runApp(Menu());
-}
 
 
 class Menu extends StatelessWidget {
-  const Menu({Key? key}) : super(key: key);
+  const Menu({super.key});
   @override
  Widget build(BuildContext context) {
     return Scaffold(
