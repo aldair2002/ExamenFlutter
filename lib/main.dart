@@ -1,5 +1,6 @@
 import 'package:examen/create_ticket.dart';
 import 'package:examen/menu.dart';
+import 'package:examen/view_ticket.dart';
 import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
@@ -22,6 +23,12 @@ class MyApp extends StatelessWidget {
         path: '/create_ticket',
         builder: (BuildContext context, GoRouterState state) {
           return CreateTicketPage();
+        },
+      ),
+            GoRoute(
+        path: '/view_tickets',
+        builder: (BuildContext context, GoRouterState state) {
+          return ViewTicketPage();
         },
       ),
     ],
